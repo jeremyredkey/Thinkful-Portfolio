@@ -2,6 +2,7 @@
 body {
 	background: #000;
 }
+/* Use some CSS3 flexbox for alignment */
 #top-header {
 	display: flex;
 	align-items: center;
@@ -14,13 +15,17 @@ body {
 	color: #fff;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/* Give sections some space */
 section {
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
+/* Fix letters overlapping in h2 */
 #top-header h2 {
 	letter-spacing: 1px;
 }
+
+/* Circular profile picture CSS */
 .profile-pic {
 	width: 200px;
 	border: 3px solid #fff;
@@ -30,10 +35,12 @@ section {
 	border-radius: 50%;
 	max-width: 100%;
 }
+/* Profile picture style end */
 nav {
 	padding: 20px;
 	margin-bottom: 20px;
 }
+/* Create nav "buttons" */
 #top-header nav a {
 	color: #fff;
 	background: #F4AD24;
@@ -86,11 +93,13 @@ main .main-container {
 .about-container p {
 	font-size: 20px;
 }
+/* Set font family */
 .main-container {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	padding: 40px 20px;
 	text-align: center;
 }
+/* list styles */
 ul li {
 	line-height: 30px;
 	list-style: none;
@@ -99,6 +108,9 @@ ol li {
 	font-size: 18px;
 	font-weight: bold;
 }
+/* list styles end */
+
+/* link styles */
 .main-container ul li a, p a {
 	color: #000;
 	text-decoration: none;
@@ -110,6 +122,7 @@ ol li {
 	font-weight: bold;
 	transform: scale(1.1);
 }
+/* link styles end */
 #contact-section {
 	background: #000;
 	border-radius: 5px;
@@ -117,13 +130,16 @@ ol li {
 	width: 500px;
 	margin: 0 auto;
 }
+/* Reset margins for social media list */
 #contact-section .social-list {
 	margin: 0 auto;
 	padding: 0;
 }
+/* Make text visible to user */
 #contact-section a, #contact-section h2 {
 	color: #fff;
 }
+/* Increase anchor size */
 #contact-section a {
 	font-size: 20px;
 }
