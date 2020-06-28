@@ -1,0 +1,129 @@
+/* Initalize dark mode */
+body {
+	background: #000;
+}
+#top-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: #000;
+}
+/* Dark mode has been initalized */
+#top-header h1, #top-header h2 {
+	color: #fff;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+#top-header h2 {
+	letter-spacing: 1px;
+}
+.profile-pic {
+	width: 200px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+}
+.profile-pic img {
+	border-radius: 50%;
+	max-width: 100%;
+}
+nav {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+#top-header nav a {
+	color: #fff;
+	background: #F4AD24;
+	text-decoration: none;
+	padding: 8px 10px;
+	border-radius: 3px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	transition: all .3s ease-in-out;
+}
+#top-header nav a:hover {
+	color: #000;
+}
+hr {
+	border: none;
+	border-top: 3px double #333;
+	color: #333;
+	overflow: visible;
+	text-align: center;
+	height: 5px;
+}
+/* Let me try pseudo :after */
+hr:after {
+	background: #F4AD24;
+	content: '§';
+	padding: 0 4px;
+	position: relative;
+	top: -13px;
+}
+main .main-container {
+	background: #ccc;
+	width: 100%;
+}
+.main-container #intro {
+	width: 95%;
+}
+/* material ui box shadow */
+.about-container {
+	background: #F4AD24;
+	padding: 10px 20px;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+	width: 700px;
+	margin: 0 auto;
+}
+.about-container:hover {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+/* material ui box shadow */
+.about-container p {
+	font-size: 20px;
+}
+.main-container {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 40px 20px;
+	text-align: center;
+}
+ul li {
+	line-height: 30px;
+	list-style: none;
+}
+ol li {
+	font-size: 18px;
+	font-weight: bold;
+}
+.main-container ul li a, p a {
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
+	transition: all .3s ease-in-out;
+}
+.main-container a:hover, p a:hover {
+	border-bottom: 5px solid #F4AD24;
+	font-weight: bold;
+	transform: scale(1.1);
+}
+#contact-section {
+	background: #000;
+	border-radius: 5px;
+	padding: 20px 10px;
+	width: 500px;
+	margin: 0 auto;
+}
+#contact-section .social-list {
+	margin: 0 auto;
+	padding: 0;
+}
+#contact-section a, #contact-section h2 {
+	color: #fff;
+}
+#contact-section a {
+	font-size: 20px;
+}
