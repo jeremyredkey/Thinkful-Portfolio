@@ -1,24 +1,33 @@
-/* Initalize dark mode */
-body {
-	background: #000;
-}
+/* * {
+  border: red 1px solid;
+} */
 /* Use some CSS3 flexbox for alignment */
 #top-header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background: #000;
+  background-image: url("images/header-feat-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
 }
+
+
+
 /* Dark mode has been initalized */
 #top-header h1, #top-header h2 {
 	color: #fff;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 2px 2px #000000;
+  position: relative;
+  right: -8%;
 }
 /* Give sections some space */
 section {
 	margin-top: 100px;
 	margin-bottom: 100px;
+  flex: 1;
 }
 /* Fix letters overlapping in h2 */
 #top-header h2 {
@@ -27,13 +36,11 @@ section {
 
 /* Circular profile picture CSS */
 .profile-pic {
-	width: 200px;
-	border: 3px solid #fff;
-	border-radius: 50%;
+	width: 250px;
 }
 .profile-pic img {
 	border-radius: 50%;
-	max-width: 100%;
+  width: 100%;
 }
 /* Profile picture style end */
 nav {
@@ -53,45 +60,74 @@ nav {
 #top-header nav a:hover {
 	color: #000;
 }
+/* Portfolio Styles */
+.portfolio h3 {
+  margin-top: 50px;
+}
+
+.portfolio li {
+  border: 5px solid #fff;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
 hr {
 	border: none;
-	border-top: 3px double #333;
-	color: #333;
+	border-top: 3px double rgb(253, 215, 70);
+	color: #000;
 	overflow: visible;
 	text-align: center;
 	height: 5px;
 }
 /* Let me try pseudo :after */
 hr:after {
-	background: #F4AD24;
+	background: rgb(244, 173, 36);
 	content: '§';
 	padding: 0 4px;
 	position: relative;
 	top: -13px;
 }
+/* intro section styles */
+#intro {
+  margin-bottom: 100px;
+  color: #fff;
+}
 main .main-container {
-	background: #ccc;
 	width: 100%;
+  background: #000;
 }
 .main-container #intro {
 	width: 95%;
 }
+
+.portfolio a {
+  padding: 8px 0px !important;
+  color: #F4AD24 !important;
+}
+
+.portfolio a:hover{
+border-bottom: 5px solid #fff;
+	font-weight: bold;
+	transform: scale(1.1);
+}
 /* material ui box shadow */
 .about-container {
-	background: #F4AD24;
+	background: rgb(253, 215, 70);
 	padding: 10px 20px;
 	border-radius: 5px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	box-shadow: 0 1px 3px rgba(244, 173, 36, 0.12), 0 1px 2px rgba(253, 215, 70, 0.24);
 	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-	width: 700px;
+  width: 70%;
 	margin: 0 auto;
 }
 .about-container:hover {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	box-shadow: 0 14px 28px rgba(244, 173, 36, 0.25), 0 10px 10px rgba(244, 173, 36, 0.22);
 }
 /* material ui box shadow */
 .about-container p {
-	font-size: 20px;
+	font-size: 18px;
+  font-weight: bold;
 }
 /* Set font family */
 .main-container {
@@ -99,6 +135,7 @@ main .main-container {
 	padding: 40px 20px;
 	text-align: center;
 }
+
 /* list styles */
 ul li {
 	line-height: 30px;
@@ -111,23 +148,61 @@ ol li {
 /* list styles end */
 
 /* link styles */
-.main-container ul li a, p a {
-	color: #000;
+.main-container ul li a, 
+p a {
+	color: #fff;
 	text-decoration: none;
 	font-size: 18px;
 	transition: all .3s ease-in-out;
+   padding: 3px 0 !important;
 }
-.main-container a:hover, p a:hover {
+#contact-section a:hover, p a:hover {
 	border-bottom: 5px solid #F4AD24;
 	font-weight: bold;
 	transform: scale(1.1);
+}
+
+/* Form styles */
+form {
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 10px 0px;
+}
+
+form label {
+  color: #fff;
+}
+form input,
+form textarea {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  align-items: center;
+  margin: 5px auto;
+}
+
+form textarea {
+  height: 80px;
+}
+
+#submit-btn {
+  margin-top: 20px;
+  	color: #fff;
+	background: #F4AD24;
+	text-decoration: none;
+	padding: 8px 10px;
+  border: 1px solid #F4AD24;
+	border-radius: 3px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	transition: all .3s ease-in-out;
 }
 /* link styles end */
 #contact-section {
 	background: #000;
 	border-radius: 5px;
 	padding: 20px 10px;
-	width: 500px;
+	width: 60%;
 	margin: 0 auto;
 }
 /* Reset margins for social media list */
@@ -142,4 +217,24 @@ ol li {
 /* Increase anchor size */
 #contact-section a {
 	font-size: 20px;
+}
+
+/* Media query font size & properties  */
+@media (min-width:600px) {
+body {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
+
+#intro a {
+font-size: 1.2em !important; 
+line-height: 1.5;
+padding: 20px 10px;
+}
+}
+
+@media (min-width:1200px) {
+.profile-pic {
+	width: 400px;
+}
 }
