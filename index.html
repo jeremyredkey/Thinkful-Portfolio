@@ -32,20 +32,13 @@
 					<h3>Archive of web projects that I have completed:</h3>
 					<ul>
             <!-- Portfolio links added to a unordered list -->
-						<li> 
-							San Gorgonio Memorial Hospital Website<br/>
-              Website: <a href="www.sgmh.org">sgmh.org</a><br/>
-              Description: Public website for San Gorgonio Memorial Hospital, created with custom wordpress theme - HTML5, CSS3, AJAX, Javascript (ES6), and MySQL.
-						</li>
-						<li>
-              San Gorgonio Memorial Medical Clinic<br/>
-							Website: <a href="www.sgmmc.org">sgmmc.org</a><br/>
-              Description: Public website for San Gorgonio Memorial Medical, created with custom Divi wordpress theme - HTML5, CSS3, AJAX, Javascript (ES6), and MySQL.
-						</li>
+			
           <li>
+            <!-- Each project description should also explain its purpose, how you built it, and what you learned from building it. -->
               Loan Calculator App<br/>
 							<a href="https://github.com/jeremyredkey/LoanCalcApp">Github Repo</a><br/>
-              Description: Github Repo built with Bootstrap, CSS, and Vanilla Javascript ES6.
+              Description: I was inspired by <a href="https://www.creditkarma.com/calculators/loan" target="_blank">Credit Karma's application</a> The purpose of this application was to test my abilities to manipulate the DOM with Javascript while creating a tool that can help financial loan officers. This required a simple form UI that was really easy because of Bootstrap 4 classes and responsiveness. To build this application I used Bootstrap 4, a little CSS, and Vanilla Javascript ES6. I learned many things from this project but the biggest help was once I found <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat" target="_blank">parseFloat() on MDN</a> (this is particularly useful when dealing with money). Also I learned the formula on how to calculate loan total interest, monthly payment, and total payment by using this website: 
+              <a href="https://www.calculatorsoup.com/calculators/financial/loan-calculator.php" target="_blank">https://www.calculatorsoup.com</a>
 						</li>
 					</ul>
           </div>
@@ -55,9 +48,11 @@
 					<div class="about-container">
 						<header>
 							<h2>About Me</h2>
-							<p>I'm passionate about creating complex but <em>addictive</em> applications that the world can enjoy. I'm a team player who always looks forward to facing projects as a group and collaborating about new ideas to help exceed users needs.</p>
-							<p>I just started Thinkful Engineer Flex Program to help strengthen my programming skills, level up my workflow, widen my network, and hopefully after a lot of hard work I will land a dream job. I'm currently working as a Web Developer right now but I want to be the best I can be in my field. I'm driven to learn everyday and I believe with my continual hands-on experience at Thinkful I will be aptly prepared to be a exceptional member of any team. I have experience with using HTML5 and CSS3 as well as SASS/LESS. Futhermore, I'm comfortable with setting up virtual/physical LAMP web servers in hospital environment, writing clean Javascript/PHP, and creating custom Wordpress themes/plugins.</p>
-							<p>When I'm not programming I'm either:</p>
+							<p>I'm passionate about creating complex but addictive applications that the world can enjoy. I'm a team player who always looks forward to facing projects as a group and collaborating about new ideas to help exceed users' needs.</p>
+							
+              <p>
+              I just started Thinkful Engineer Flex Program to help strengthen my programming skills, level up my workflow, widen my network, and hopefully after a lot of hard work I will land a dream job. I'm currently working as a Web Developer right now but I want to be the best I can be in my field. I'm driven to learn every day and I believe with my continual hands-on experience at Thinkful I will be aptly prepared to be an exceptional member of any team. I have experience with using HTML5 and CSS3 as well as SASS/LESS. Furthermore, I'm comfortable with setting up virtual/physical LAMP web servers in a hospital environment, writing clean Javascript/PHP, and creating custom WordPress themes/plugins.</p>
+                  <p>When I'm not programming I'm either:</p>
 							<ol><!-- Hobbies besides programming in a ordered list -->
                 <li>Tasting new coffee brews</li>
 								<li>Learning new songs on the guitar</li>
@@ -75,9 +70,9 @@
 
           <form action="https://formspree.io/xgennqor" method="POST" target="_blank">
  <label for="email">Email Address:</label>
-  <input type="email" placeholder="Enter Email Address"></input>
+  <input type="email" placeholder="Enter Email Address" id="email">
   <label for="name">Name:</label>
-  <input type="text" name="name" placeholder="Enter Full Name"></input>
+  <input type="text" name="name" placeholder="Enter Full Name" id="name">
   <label for="form-message">Your message:</label>
     <textarea id="form-message" name="message" placeholder="How Can I Help You?"></textarea>
     <button id="submit-btn" type="submit" value="Send">Send Message</button>
