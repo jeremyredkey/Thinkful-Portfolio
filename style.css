@@ -239,3 +239,8 @@ padding: 20px 10px;
 	width: 400px;
 }
 }
+
+.portfolio-img {
+  max-width: 100%;
+  height: auto; 
+}
